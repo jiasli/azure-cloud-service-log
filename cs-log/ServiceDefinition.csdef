@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServiceDefinition name="cs_log" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
-  <WebRole name="WebRole1" vmsize="Standard_D1_v2">
+  <WebRole name="WebRole1" vmsize="Medium">
+    <Runtime executionContext="elevated" />
     <Sites>
       <Site name="Web">
         <Bindings>
@@ -14,5 +15,9 @@
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
   </WebRole>
 </ServiceDefinition>
