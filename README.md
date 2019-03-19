@@ -1,5 +1,7 @@
 # Azure Cloud Service Role Instance Logging to Azure Table Storage
 
+Main functionality is in [WebRole1/TableLog.cs](WebRole1/TableLog.cs)
+
 ## Write to Table Storage
 
 Get started with Azure Table storage and the Azure Cosmos DB Table API using .NET: https://docs.microsoft.com/en-us/azure/cosmos-db/table-storage-how-to-use-dotnet
